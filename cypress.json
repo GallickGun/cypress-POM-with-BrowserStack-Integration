@@ -1,4 +1,5 @@
 {
+    "projectId": "<your_project_id>",
     "baseUrl": "https://www.saucedemo.com/",
     "env":{
         "sauceUser": "standard_user",

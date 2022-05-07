@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:dashboard": "npx cypress run --record --key <your_key_here>"
   },
   "author": "GallickGun",
   "license": "ISC",
