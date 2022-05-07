@@ -1,3 +1,10 @@
 {
+    "baseUrl": "https://www.saucedemo.com/",
+    "env":{
+        "sauceUser": "standard_user",
+        "saucePassword": "secret_sauce",
+        "sauceErrorUser": "errorrrr_error",
+        "sauceErrorPassword": "wrong_sauce"
+        },
     "chromeWebSecurity": false
 }
