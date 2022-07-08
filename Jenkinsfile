@@ -1,9 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'cypress/base:10'
+    }
+  }
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
         sh 'npm install cypress --save-dev'
       }
     }
