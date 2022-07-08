@@ -11,6 +11,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm install --global yarn'
+        sh 'yarn add --dev cypress'
       }
     }
     stage('E2E test'){
