@@ -12,7 +12,6 @@ pipeline {
       steps {
         sh(script: 'npm install')
         sh 'npm -v'
-        sh 'sudo su'
         sh 'npm install cypress --save-dev' 
       }
     }
