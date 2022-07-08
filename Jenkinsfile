@@ -15,7 +15,7 @@ pipeline {
     }
     stage('E2E test'){
       steps {
-        sh 'yarn run start'
+        sh 'yarn run cypress open'
       }
     }
   }
