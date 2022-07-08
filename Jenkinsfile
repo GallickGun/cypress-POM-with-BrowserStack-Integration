@@ -12,12 +12,13 @@ pipeline {
       steps {
         sh(script: 'npm install')
         sh 'npm -v'
+        sh 'apt install xvfb'
         sh 'npm install cypress --save-dev' 
       }
     }
     stage('E2E test'){
       steps {
-        sh 'cypress run --headless'
+        sh 'npm cypress run'
       }
     }
   }
