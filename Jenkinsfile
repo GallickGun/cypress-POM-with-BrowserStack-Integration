@@ -1,9 +1,9 @@
 pipeline {
-  agent{
+  agent any
     // docker {
     //   image 'cypress/browsers:node12.6.0-chrome75'
     // }
-  }
+  
   tools{
     nodejs "18.5.0"
   }
