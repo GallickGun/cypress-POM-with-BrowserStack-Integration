@@ -11,5 +11,10 @@ pipeline {
         sh 'npm install cypress --save-dev'
       }
     }
+    stage('E2E test'){
+      steps {
+        sh 'npx cypress run'
+      }
+    }
   }
 }
