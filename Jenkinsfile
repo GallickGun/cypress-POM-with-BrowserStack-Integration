@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('build'){
+    stage('chheckout'){
     steps{
-        git 'https://github.com/GallickGun/cypress-POM-with-BrowserStack-Integration'
+        git branch: 'main', url: 'https://github.com/GallickGun/cypress-POM-with-BrowserStack-Integration'
         }
     }
     // Install and verify Cypress
