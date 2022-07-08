@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh(script: 'npm install')
         sh 'npm -v'
-        sh 'sudp apt install xvfb'
+        sh 'sudo apt install xvfb'
         sh 'npm install cypress --save-dev' 
       }
     }
